@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4a154b; /* Purple background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #291029; /* Dark purple background */
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(135, 88, 255, 0.3); /* Soft purple box shadow */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 2px solid #8758ff; /* Purple border */
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.todo-input::placeholder {
+  color: #ffffff8a; /* Light purple placeholder color */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.todo-btn:hover {
+  background: #6c3d99; /* Darker purple on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.Todo:hover {
+  background: #6c3d99; /* Darker purple on hover */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.fa-trash:hover {
+  color: #ff6666; /* Red on hover for delete icon */
+}
+
+.incompleted,
+.completed {
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.incompleted:hover,
+.completed:hover {
+  color: #c5aeff; /* Lighter purple on hover for task status */
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #6c3d99; /* Darker purple on hover for edit and delete icons */
+}
